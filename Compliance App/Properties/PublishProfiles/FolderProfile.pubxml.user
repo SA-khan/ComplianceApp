@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\Release\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Compliance App.dll">
+      <publishTime>10/04/2019 20:25:32</publishTime>
+    </File>
+    <File Include="bin/Compliance App.pdb">
+      <publishTime>10/04/2019 20:25:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/25/2018 01:38:22</publishTime>
+    </File>
+    <File Include="ContentPages/ReportEUConsolidatedFinancialSanctions.aspx">
+      <publishTime>10/04/2019 16:27:49</publishTime>
+    </File>
+    <File Include="ContentPages/ReportFIAMostWantedCyberCrimeCircle.aspx">
+      <publishTime>10/04/2019 15:59:04</publishTime>
+    </File>
+    <File Include="ContentPages/ReportFIAMostWantedHumanSmugglersAndTraffickers.aspx">
+      <publishTime>10/03/2019 16:49:16</publishTime>
+    </File>
+    <File Include="ContentPages/ReportFIAMostWantedTerrorists.aspx">
+      <publishTime>10/04/2019 15:59:28</publishTime>
+    </File>
+    <File Include="ContentPages/ReportInvestorsData.aspx">
+      <publishTime>10/04/2019 15:59:40</publishTime>
+    </File>
+    <File Include="ContentPages/ReportMatchingData.aspx">
+      <publishTime>10/04/2019 20:10:19</publishTime>
+    </File>
+    <File Include="ContentPages/ReportOFACSpeciallyDesignatedNationalsAndBlockedEntities.aspx">
+      <publishTime>10/04/2019 16:00:06</publishTime>
+    </File>
+    <File Include="ContentPages/ReportProscribedOrganisationNACTA.aspx">
+      <publishTime>10/04/2019 16:00:19</publishTime>
+    </File>
+    <File Include="ContentPages/ReportUNSecurityCouncilConsolidated.aspx">
+      <publishTime>10/04/2019 16:00:40</publishTime>
+    </File>
+    <File Include="ContentPages/UploadEUConsolidatedFinancialSanctions.aspx">
+      <publishTime>10/03/2019 13:00:55</publishTime>
+    </File>
+    <File Include="ContentPages/UploadFIAMostWantedCyberCrimeCircle.aspx">
+      <publishTime>10/04/2019 15:48:12</publishTime>
+    </File>
+    <File Include="ContentPages/UploadFIAMostWantedHumanSmugglersAndTraffickers.aspx">
+      <publishTime>10/04/2019 15:42:33</publishTime>
+    </File>
+    <File Include="ContentPages/UploadFIAMostWantedTerrorists.aspx">
+      <publishTime>10/04/2019 15:50:45</publishTime>
+    </File>
+    <File Include="ContentPages/UploadInvestorsData.aspx">
+      <publishTime>10/04/2019 15:44:52</publishTime>
+    </File>
+    <File Include="ContentPages/UploadOFACSpeciallyDesignatedNationalsAndBlockedEntities.aspx">
+      <publishTime>10/04/2019 15:52:23</publishTime>
+    </File>
+    <File Include="ContentPages/UploadProscribedOrganisationNACTA.aspx">
+      <publishTime>10/04/2019 15:55:01</publishTime>
+    </File>
+    <File Include="ContentPages/UploadUNSecurityCouncilConsolidated.aspx">
+      <publishTime>10/04/2019 15:56:25</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>10/04/2019 16:02:45</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/02/2019 11:36:53</publishTime>
+    </File>
+    <File Include="images/Background-Image-HD.jpg">
+      <publishTime>10/02/2019 16:46:11</publishTime>
+    </File>
+    <File Include="images/background-image.jpg">
+      <publishTime>10/02/2019 16:32:00</publishTime>
+    </File>
+    <File Include="images/background_h0eesdzu.jpg">
+      <publishTime>10/02/2019 16:47:38</publishTime>
+    </File>
+    <File Include="images/blue-background.jpg">
+      <publishTime>10/02/2019 16:42:30</publishTime>
+    </File>
+    <File Include="images/output-onlinejpgtools.jpg">
+      <publishTime>10/02/2019 16:36:18</publishTime>
+    </File>
+    <File Include="MasterPage/Frontend.Master">
+      <publishTime>10/02/2019 13:05:06</publishTime>
+    </File>
+    <File Include="MasterPage/FrontendWithoutSidebar.Master">
+      <publishTime>10/02/2019 13:18:52</publishTime>
+    </File>
+    <File Include="Styles/styles.css">
+      <publishTime>10/02/2019 16:48:27</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/04/2019 18:30:41</publishTime>
+    </File>
+    <File Include="Web.sitemap">
+      <publishTime>10/03/2019 13:22:15</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

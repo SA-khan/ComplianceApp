@@ -35,23 +35,17 @@ namespace Compliance_App.ContentPages
             return ds;
         }
 
-        private DataSet SetData(string FirstName)
+        private DataSet SetData(string FullName, string Email, string Phone)
         {
             
-            //string input_data = "Saad";
             DataSet ds = new DataSet();
             using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["myConnectionString"].ConnectionString))
             {
                 conn.Open();
                 SqlCommand sqlComm = new SqlCommand("MatchingRecord", conn);
-                sqlComm.Parameters.AddWithValue("@UnitHolderData_ID", "");
-                sqlComm.Parameters.AddWithValue("@UnitHolderData_PASSPORT", "");
-                sqlComm.Parameters.AddWithValue("@UnitHolderData_FIRSTNAME", FirstName);
-                sqlComm.Parameters.AddWithValue("@UnitHolderData_LASTNAME", "");
-                sqlComm.Parameters.AddWithValue("@UnitHolderData_ADDRESS", "");
-                sqlComm.Parameters.AddWithValue("@UnitHolderData_PHONE", "");
-                sqlComm.Parameters.AddWithValue("@UnitHolderData_CITY", "");
-                sqlComm.Parameters.AddWithValue("@UnitHolderData_COUNTRY", "");
+                sqlComm.Parameters.AddWithValue("@UnitHolderData_FULLNAME", FullName);
+                sqlComm.Parameters.AddWithValue("@UnitHolderData_EMAIL", Email);
+                sqlComm.Parameters.AddWithValue("@UnitHolderData_PHONE", Phone);
                 sqlComm.CommandType = CommandType.StoredProcedure;
                 sqlComm.ExecuteNonQuery();
                 //SqlDataAdapter da = new SqlDataAdapter();
@@ -68,7 +62,7 @@ namespace Compliance_App.ContentPages
             using (SqlConnection con = new SqlConnection(conString))
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("TRUNCATE TABLE [MatchedData]", con);
+                SqlCommand cmd = new SqlCommand("TRUNCATE TABLE MatchedData", con);
                 cmd.ExecuteNonQuery();
                 con.Close();
             }
@@ -81,13 +75,15 @@ namespace Compliance_App.ContentPages
         protected void Button2_Click(object sender, EventArgs e)
         {
 
-            List<string> FirstName = new List<string>();
+            List<string> FullName = new List<string>();
+            List<string> Email = new List<string>();
+            List<string> Phone = new List<string>();
 
             string conString = ConfigurationManager.ConnectionStrings["myConnectionString"].ConnectionString;
             using (SqlConnection con = new SqlConnection(conString))
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("TRUNCATE TABLE [DemoDatabase].[dbo].[MatchedData]", con);
+                SqlCommand cmd = new SqlCommand("TRUNCATE TABLE MatchedData", con);
                 cmd.ExecuteNonQuery();
                 con.Close();
             }
@@ -101,14 +97,16 @@ namespace Compliance_App.ContentPages
                 {
                     while (reader.Read())
                     {
-                        FirstName.Add(reader[1].ToString());
+                        FullName.Add(reader[1].ToString());
+                        Email.Add(reader[2].ToString());
+                        Phone.Add(reader[3].ToString());
                     }
                 }
                 con.Close();
             }
 
-            for (int i = 0; i < FirstName.Count; i++){
-                SetData(FirstName[i]);
+            for (int i = 0; i < FullName.Count; i++){
+                SetData(FullName[i], Email[i], Phone[i]);
             }
 
             GridView1.DataSource =  getData();

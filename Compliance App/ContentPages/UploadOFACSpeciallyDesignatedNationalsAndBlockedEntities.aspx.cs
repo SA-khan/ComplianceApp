@@ -61,11 +61,14 @@ namespace Compliance_App.ContentPages
                                     {
 
                                         int result = -1;
-                                        string FIRST_NAME = Convert.ToString(row[0]);
+                                        string Column1 = Convert.ToString(row[0]);
+                                        string Column2 = Convert.ToString(row[1]);
+                                        string Column3 = Convert.ToString(row[2]);
+                                        string Column4 = "";
 
                                         try
                                         {
-                                            result = cls.InsertOFACSpeciallyDesignatedNationalsAndBlockedEntitiesData(FIRST_NAME);
+                                            result = cls.InsertOFACSpeciallyDesignatedNationalsAndBlockedEntitiesData(Column1, Column2, Column3, Column4);
                                         }
                                         catch (Exception ex)
                                         {
@@ -77,8 +80,8 @@ namespace Compliance_App.ContentPages
                                     }
                                     else
                                     {
-                                        if (row[0] == "FirstName") { }
-                                        else { lblStatus.Text = "File Invalid Format."; break; }
+                                        //if (row[0] == "Column1" && row[1] == "Column2" && row[2] == "Column3" && row[4] == "Column4") { }
+                                        //else { lblStatus.Text = "File Invalid Format."; break; }
                                     }
                                 }
                             }
@@ -96,8 +99,15 @@ namespace Compliance_App.ContentPages
 
                         //Internal Working End
 
-                        //Message Appeared when file uploads completely.
-                        lblStatus.Text = "File Uploaded Successfully.";
+                        if (lblStatus.Text == "File Invalid Format.")
+                        {
+
+                        }
+                        else
+                        {
+                            //Message Appeared when file uploads completely.
+                            lblStatus.Text = "File Uploaded Successfully.";
+                        }
                         trStatus.Visible = true;
 
                     }

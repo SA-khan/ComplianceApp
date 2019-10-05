@@ -61,11 +61,13 @@ namespace Compliance_App.ContentPages
                                     {
 
                                         int result = -1;
-                                        string FIRST_NAME = Convert.ToString(row[0]);
+                                        string FULL_NAME = Convert.ToString(row[1]);
+                                        string EMAIL = Convert.ToString(row[2]);
+                                        string PHONE = Convert.ToString(row[3]);
 
                                         try
                                         {
-                                            result = cls.InsertInvertorData(FIRST_NAME);
+                                            result = cls.InsertInvertorData(FULL_NAME, EMAIL, PHONE);
                                         }
                                         catch (Exception ex)
                                         {
@@ -77,8 +79,8 @@ namespace Compliance_App.ContentPages
                                     }
                                     else
                                     {
-                                        if(row[0] == "FirstName") { }
-                                        else { lblStatus.Text = "File Invalid Format."; break; }
+                                        //if(row[0] == "FullName" && row[1] == "Email" && row[2] == "Phone") { }
+                                        //else { lblStatus.Text = "File Invalid Format."; lblFormat.Text = "Invalid File Format."; break; }
                                     }
                                 }
                             }
@@ -94,13 +96,22 @@ namespace Compliance_App.ContentPages
                             }
 
 
-                            //Internal Working End
+                        //Internal Working End
 
-                            //Message Appeared when file uploads completely.
+                        //Message Appeared when file uploads completely.
+                        //if (lblFormat.Text == "Invalid File Format.")
+                        //{
+
+                        //}
+                        //else
+                        //{
                             lblStatus.Text = "File Uploaded Successfully.";
-                            trStatus.Visible = true;
+                            
+                        //}
 
-                        }
+                        trStatus.Visible = true;
+
+                    }
                         catch (OutOfMemoryException ex)
                         {
                             lblStatus.Text = "Memory is not enough. Please delete old data and try again." + ex.Message;

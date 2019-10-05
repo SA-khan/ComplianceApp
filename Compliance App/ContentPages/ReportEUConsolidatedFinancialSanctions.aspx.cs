@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -34,16 +35,23 @@ namespace Compliance_App.ContentPages
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string conString = ConfigurationManager.ConnectionStrings["myConnectionString"].ConnectionString;
-            using (SqlConnection con = new SqlConnection(conString))
+            try
             {
-                con.Open();
-                SqlCommand cmd = new SqlCommand("TRUNCATE TABLE EUConsolidatedFinancialSanctions", con);
-                cmd.ExecuteNonQuery();
-                con.Close();
+                string conString = ConfigurationManager.ConnectionStrings["myConnectionString"].ConnectionString;
+                using (SqlConnection con = new SqlConnection(conString))
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("TRUNCATE TABLE EUConsolidatedFinancialSanctions", con);
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                }
+                GridView1.DataSource = getData();
+                GridView1.DataBind();
             }
-            GridView1.DataSource = getData();
-            GridView1.DataBind();
+            catch(Exception ex)
+            {
+                Debug.WriteLine("Exception Occured: "+ex.Message);
+            }
         }
     }
 }

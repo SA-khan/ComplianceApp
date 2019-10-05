@@ -15,7 +15,7 @@ namespace Compliance_App.App_Code
         string connStr = ConfigurationManager.ConnectionStrings["myConnectionString"].ConnectionString;
 
         #region InsertInvertorData
-        public int InsertInvertorData(string firstName)
+        public int InsertInvertorData(string FullName, string Email, string Phone)
         {
             int result = -1;
             DataTable dt = new DataTable();
@@ -25,7 +25,9 @@ namespace Compliance_App.App_Code
             cmd.CommandText = "InsertUnitHoldersData";
             cmd.CommandType = CommandType.StoredProcedure;
 
-            cmd.Parameters.Add("@FIRSTNAME", SqlDbType.VarChar).Value = firstName;
+            cmd.Parameters.Add("@FULLNAME", SqlDbType.VarChar).Value = FullName;
+            cmd.Parameters.Add("@EMAIL", SqlDbType.VarChar).Value = Email;
+            cmd.Parameters.Add("@PHONE", SqlDbType.VarChar).Value = Phone;
 
             try
             {
@@ -47,7 +49,7 @@ namespace Compliance_App.App_Code
         #endregion
 
         #region EUConsolidatedFinancialSanctions
-        public int InsertEUConsolidatedFinancialSanctionsData(string firstName)
+        public int InsertEUConsolidatedFinancialSanctionsData(string Column1, string Column2, string Column3, string Column4)
         {
             int result = -1;
             DataTable dt = new DataTable();
@@ -57,7 +59,10 @@ namespace Compliance_App.App_Code
             cmd.CommandText = "InsertEUConsolidatedFinancialSanctionsData";
             cmd.CommandType = CommandType.StoredProcedure;
 
-            cmd.Parameters.Add("@FIRSTNAME", SqlDbType.VarChar).Value = firstName;
+            cmd.Parameters.Add("@COLUMN1", SqlDbType.VarChar).Value = Column1;
+            cmd.Parameters.Add("@COLUMN2", SqlDbType.VarChar).Value = Column2;
+            cmd.Parameters.Add("@COLUMN3", SqlDbType.VarChar).Value = Column3;
+            cmd.Parameters.Add("@COLUMN4", SqlDbType.VarChar).Value = Column4;
 
             try
             {
@@ -80,7 +85,7 @@ namespace Compliance_App.App_Code
 
         #region UploadFIAMostWantedCyberCrimeCircle
 
-        public int InsertFIAMostWantedCyberCrimeCircleData(string firstName)
+        public int InsertFIAMostWantedCyberCrimeCircleData(string Column1, string Column2, string Column3, string Column4)
         {
             int result = -1;
             DataTable dt = new DataTable();
@@ -90,7 +95,10 @@ namespace Compliance_App.App_Code
             cmd.CommandText = "InsertFIAMostWantedCyberCrimeCircleData";
             cmd.CommandType = CommandType.StoredProcedure;
 
-            cmd.Parameters.Add("@FIRSTNAME", SqlDbType.VarChar).Value = firstName;
+            cmd.Parameters.Add("@COLUMN1", SqlDbType.VarChar).Value = Column1;
+            cmd.Parameters.Add("@COLUMN2", SqlDbType.VarChar).Value = Column2;
+            cmd.Parameters.Add("@COLUMN3", SqlDbType.VarChar).Value = Column3;
+            cmd.Parameters.Add("@COLUMN4", SqlDbType.VarChar).Value = Column4;
 
             try
             {
@@ -114,7 +122,7 @@ namespace Compliance_App.App_Code
 
         #region FIAMostWantedHumanSmugglersAndTraffickers
 
-        public int InsertFIAMostWantedHumanSmugglersAndTraffickersData(string firstName)
+        public int InsertFIAMostWantedHumanSmugglersAndTraffickersData(string Column1, string Column2, string Column3, string Column4)
         {
             int result = -1;
             DataTable dt = new DataTable();
@@ -124,7 +132,10 @@ namespace Compliance_App.App_Code
             cmd.CommandText = "InsertFIAMostWantedHumanSmugglersAndTraffickersData";
             cmd.CommandType = CommandType.StoredProcedure;
 
-            cmd.Parameters.Add("@FIRSTNAME", SqlDbType.VarChar).Value = firstName;
+            cmd.Parameters.Add("@COLUMN1", SqlDbType.VarChar).Value = Column1;
+            cmd.Parameters.Add("@COLUMN2", SqlDbType.VarChar).Value = Column2;
+            cmd.Parameters.Add("@COLUMN3", SqlDbType.VarChar).Value = Column3;
+            cmd.Parameters.Add("@COLUMN4", SqlDbType.VarChar).Value = Column4;
 
             try
             {
@@ -147,7 +158,7 @@ namespace Compliance_App.App_Code
 
         #region FIAMostWantedTerrorists
 
-        public int InsertFIAMostWantedTerroristsData(string firstName)
+        public int InsertFIAMostWantedTerroristsData(string Column1, string Column2, string Column3, string Column4)
         {
             int result = -1;
             DataTable dt = new DataTable();
@@ -157,7 +168,10 @@ namespace Compliance_App.App_Code
             cmd.CommandText = "InsertFIAMostWantedTerroristsData";
             cmd.CommandType = CommandType.StoredProcedure;
 
-            cmd.Parameters.Add("@FIRSTNAME", SqlDbType.VarChar).Value = firstName;
+            cmd.Parameters.Add("@COLUMN1", SqlDbType.VarChar).Value = Column1;
+            cmd.Parameters.Add("@COLUMN2", SqlDbType.VarChar).Value = Column2;
+            cmd.Parameters.Add("@COLUMN3", SqlDbType.VarChar).Value = Column3;
+            cmd.Parameters.Add("@COLUMN4", SqlDbType.VarChar).Value = Column4;
 
             try
             {
@@ -180,7 +194,7 @@ namespace Compliance_App.App_Code
 
         #region UploadOFACSpeciallyDesignatedNationalsAndBlockedEntities
 
-        public int InsertOFACSpeciallyDesignatedNationalsAndBlockedEntitiesData(string firstName)
+        public int InsertOFACSpeciallyDesignatedNationalsAndBlockedEntitiesData(string Column1, string Column2, string Column3, string Column4)
         {
             int result = -1;
             DataTable dt = new DataTable();
@@ -190,7 +204,10 @@ namespace Compliance_App.App_Code
             cmd.CommandText = "InsertOFACSpeciallyDesignatedNationalsAndBlockedEntitiesData";
             cmd.CommandType = CommandType.StoredProcedure;
 
-            cmd.Parameters.Add("@FIRSTNAME", SqlDbType.VarChar).Value = firstName;
+            cmd.Parameters.Add("@COLUMN1", SqlDbType.VarChar).Value = Column1;
+            cmd.Parameters.Add("@COLUMN2", SqlDbType.VarChar).Value = Column2;
+            cmd.Parameters.Add("@COLUMN3", SqlDbType.VarChar).Value = Column3;
+            cmd.Parameters.Add("@COLUMN4", SqlDbType.VarChar).Value = Column4;
 
             try
             {
@@ -213,7 +230,7 @@ namespace Compliance_App.App_Code
 
         #region UploadProscribedOrganisationNACTA
 
-        public int InsertProscribedOrganisationNACTAData(string firstName)
+        public int InsertProscribedOrganisationNACTAData(string Column1, string Column2, string Column3, string Column4)
         {
             int result = -1;
             DataTable dt = new DataTable();
@@ -223,7 +240,10 @@ namespace Compliance_App.App_Code
             cmd.CommandText = "InsertProscribed_Organisation_NACTAData";
             cmd.CommandType = CommandType.StoredProcedure;
 
-            cmd.Parameters.Add("@FIRSTNAME", SqlDbType.VarChar).Value = firstName;
+            cmd.Parameters.Add("@COLUMN1", SqlDbType.VarChar).Value = Column1;
+            cmd.Parameters.Add("@COLUMN2", SqlDbType.VarChar).Value = Column2;
+            cmd.Parameters.Add("@COLUMN3", SqlDbType.VarChar).Value = Column3;
+            cmd.Parameters.Add("@COLUMN4", SqlDbType.VarChar).Value = Column4;
 
             try
             {
@@ -246,7 +266,7 @@ namespace Compliance_App.App_Code
 
         #region UploadUNSecurityCouncilConsolidated
 
-        public int InsertUNSecurityCouncilConsolidatedData(string firstName)
+        public int InsertUNSecurityCouncilConsolidatedData(string Column1, string Column2, string Column3, string Column4)
         {
             int result = -1;
             DataTable dt = new DataTable();
@@ -256,7 +276,10 @@ namespace Compliance_App.App_Code
             cmd.CommandText = "InsertUNSecurityCouncilConsolidatedListData";
             cmd.CommandType = CommandType.StoredProcedure;
 
-            cmd.Parameters.Add("@FIRSTNAME", SqlDbType.VarChar).Value = firstName;
+            cmd.Parameters.Add("@COLUMN1", SqlDbType.VarChar).Value = Column1;
+            cmd.Parameters.Add("@COLUMN2", SqlDbType.VarChar).Value = Column2;
+            cmd.Parameters.Add("@COLUMN3", SqlDbType.VarChar).Value = Column3;
+            cmd.Parameters.Add("@COLUMN4", SqlDbType.VarChar).Value = Column4;
 
             try
             {
@@ -264,7 +287,7 @@ namespace Compliance_App.App_Code
             }
             catch (Exception ex)
             {
-                Debug.WriteLine("Exception Occured at InsertProscribedOrganisationNACTAData: " + ex.Message);
+                Debug.WriteLine("Exception Occured at InsertUNSecurityCouncilConsolidatedData: " + ex.Message);
             }
             finally
             {

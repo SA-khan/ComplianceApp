@@ -61,11 +61,14 @@ namespace Compliance_App.ContentPages
                                     {
 
                                         int result = -1;
-                                        string FIRST_NAME = Convert.ToString(row[0]);
+                                        string Column1 = Convert.ToString(row[0]);
+                                        string Column2 = "";
+                                        string Column3 = "";
+                                        string Column4 = "";
 
                                         try
                                         {
-                                            result = cls.InsertUNSecurityCouncilConsolidatedData(FIRST_NAME);
+                                            result = cls.InsertUNSecurityCouncilConsolidatedData(Column1, Column2, Column3, Column4);
                                         }
                                         catch (Exception ex)
                                         {
@@ -77,8 +80,8 @@ namespace Compliance_App.ContentPages
                                     }
                                     else
                                     {
-                                        if (row[0] == "FirstName") { }
-                                        else { lblStatus.Text = "File Invalid Format."; break; }
+                                        //if (row[0] == "Column1") { }
+                                        //else { lblStatus.Text = "File Invalid Format."; Debug.WriteLine("File Invalid Format"); break; }
                                     }
                                 }
                             }
@@ -96,8 +99,12 @@ namespace Compliance_App.ContentPages
 
                         //Internal Working End
 
-                        //Message Appeared when file uploads completely.
-                        lblStatus.Text = "File Uploaded Successfully.";
+                        if (lblStatus.Text == "File Invalid Format.") { }
+                        else
+                        {
+                            //Message Appeared when file uploads completely.
+                            lblStatus.Text = "File Uploaded Successfully.";
+                        }
                         trStatus.Visible = true;
 
                     }
