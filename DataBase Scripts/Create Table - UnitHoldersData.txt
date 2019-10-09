@@ -1,6 +1,3 @@
-USE [DemoDatabase]
-GO
-
 /****** Object:  Table [dbo].[UnitHoldersData]    Script Date: 10/3/2019 5:46:54 PM ******/
 SET ANSI_NULLS ON
 GO
@@ -10,7 +7,9 @@ GO
 
 CREATE TABLE [dbo].[UnitHoldersData](
 	[ID] [int] IDENTITY(1,1) NOT NULL,
-	[FIRST_NAME] [varchar](max) NULL,
+	[FullName] [varchar](max) NULL,
+	[Email] [varchar](max) NULL,
+	[Phone] [varchar](max) NULL,
 PRIMARY KEY CLUSTERED 
 (
 	[ID] ASC

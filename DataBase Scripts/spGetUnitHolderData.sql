@@ -1,6 +1,3 @@
-USE [DemoDatabase]
-GO
-
 /****** Object:  StoredProcedure [dbo].[GetUnitHolderData]    Script Date: 10/3/2019 5:55:34 PM ******/
 SET ANSI_NULLS ON
 GO

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DemoDatabaseModelStoreContainer" CdmEntityContainer="DemoDatabaseEntities">
+    <EntitySetMapping Name="MatchedDatas">
+      <EntityTypeMapping TypeName="DemoDatabaseModel.MatchedData">
+        <MappingFragment StoreEntitySet="MatchedData">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UNIT_HOLDER_FOLIO_NUMBER" ColumnName="UNIT_HOLDER_FOLIO_NUMBER" />
+          <ScalarProperty Name="UNIT_HOLDER_FIRST_NAME" ColumnName="UNIT_HOLDER_FIRST_NAME" />
+          <ScalarProperty Name="UNIT_HOLDER_LAST_NAME" ColumnName="UNIT_HOLDER_LAST_NAME" />
+          <ScalarProperty Name="LIST_NAME" ColumnName="LIST_NAME" />
+          <ScalarProperty Name="LIST_ID" ColumnName="LIST_ID" />
+          <ScalarProperty Name="REMARKS" ColumnName="REMARKS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

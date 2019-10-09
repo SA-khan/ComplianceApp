@@ -1,6 +1,3 @@
-USE [DemoDatabase]
-GO
-
 /****** Object:  Table [dbo].[MatchedData]    Script Date: 10/3/2019 5:36:47 PM ******/
 SET ANSI_NULLS ON
 GO
@@ -15,8 +12,6 @@ CREATE TABLE [dbo].[MatchedData](
 	[UNIT_HOLDER_LAST_NAME] [varchar](max) NULL,
 	[LIST_NAME] [varchar](max) NULL,
 	[LIST_ID] [int] NULL,
-	[LIST_FIRST_NAME] [varchar](max) NULL,
-	[LIST_LAST_NAME] [varchar](max) NULL,
 	[REMARKS] [varchar](max) NULL,
 PRIMARY KEY CLUSTERED 
 (

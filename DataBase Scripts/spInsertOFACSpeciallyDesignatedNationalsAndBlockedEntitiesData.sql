@@ -1,23 +1,21 @@
-USE [DemoDatabase]
-GO
-
-/****** Object:  StoredProcedure [dbo].[InsertOFACSpeciallyDesignatedNationalsAndBlockedEntitiesData]    Script Date: 10/3/2019 5:59:33 PM ******/
+/****** Object:  StoredProcedure [dbo].[InsertOFACSpeciallyDesignatedNationalsAndBlockedEntitiesData]    Script Date: 10/5/2019 11:04:10 PM ******/
 SET ANSI_NULLS ON
 GO
-
 SET QUOTED_IDENTIFIER ON
 GO
 
 
-CREATE PROC [dbo].[InsertOFACSpeciallyDesignatedNationalsAndBlockedEntitiesData]
-   @FIRSTNAME varchar(max)
+ALTER PROC [dbo].[InsertOFACSpeciallyDesignatedNationalsAndBlockedEntitiesData]
+   @COLUMN1 varchar(max),
+   @COLUMN2 varchar(max),
+   @COLUMN3 varchar(max),
+   @COLUMN4 varchar(max)
 AS
 
 BEGIN
 
-INSERT INTO OFACSpeciallyDesignatedNationalsAndBlockedEntities(FIRST_NAME) VALUES (@FIRSTNAME);
+INSERT INTO OFACSpeciallyDesignatedNationalsAndBlockedEntities(COLUMN1,COLUMN2,COLUMN3,COLUMN4) VALUES (@COLUMN1,@COLUMN2,@COLUMN3,@COLUMN4);
 
 END
+
 GO
-
-

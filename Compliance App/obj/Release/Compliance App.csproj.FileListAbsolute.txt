@@ -29,8 +29,26 @@ C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\roslyn\VBCSCompiler
 C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\DELL\source\repos\Compliance App\Compliance App\obj\Release\Compliance App.csprojAssemblyReference.cache
-C:\Users\DELL\source\repos\Compliance App\Compliance App\obj\Release\Compliance App.csproj.CoreCompileInputs.cache
-C:\Users\DELL\source\repos\Compliance App\Compliance App\obj\Release\Compliance App.csproj.CopyComplete
 C:\Users\DELL\source\repos\Compliance App\Compliance App\obj\Release\Compliance App.dll
 C:\Users\DELL\source\repos\Compliance App\Compliance App\obj\Release\Compliance App.pdb
+C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\CrystalDecisions.ReportSource.dll
+C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\CrystalDecisions.Shared.dll
+C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\stdole.dll
+C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\CrystalDecisions.Web.dll
+C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\EntityFramework.dll
+C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\EntityFramework.SqlServer.dll
+C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\EntityFramework.xml
+C:\Users\DELL\source\repos\Compliance App\Compliance App\bin\EntityFramework.SqlServer.xml

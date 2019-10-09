@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Compliance_App.Reports;
+using CrystalDecisions.Web;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -19,6 +21,15 @@ namespace Compliance_App.ContentPages
         {
             GridView1.DataSource = getData();
             GridView1.DataBind();
+
+            //if (!Page.IsPostBack)
+            //{
+            //    DataSet1 de = new DataSet1();
+            //    MatchingDataReport cr = new MatchingDataReport();
+            //    cr.SetDataSource(de.MatchedData.Select(c => new { ID = c.ID, Unit_Holder_Folio_Number = c.UNIT_HOLDER_FOLIO_NUMBER, Unit_Holder_First_Name = c.UNIT_HOLDER_FIRST_NAME, LIST_NAME = c.LIST_NAME, LIST_ID = c.LIST_ID, REMARKS = c.REMARKS }).ToList());
+            //    this.CrystalReportViewer1.ReportSource = cr;
+                
+            //}
         }
 
         private DataSet getData()
@@ -44,8 +55,11 @@ namespace Compliance_App.ContentPages
                 conn.Open();
                 SqlCommand sqlComm = new SqlCommand("MatchingRecord", conn);
                 sqlComm.Parameters.AddWithValue("@UnitHolderData_FULLNAME", FullName);
+                Debug.WriteLine("Name: " + FullName);
                 sqlComm.Parameters.AddWithValue("@UnitHolderData_EMAIL", Email);
+                Debug.WriteLine("Email: " + Email);
                 sqlComm.Parameters.AddWithValue("@UnitHolderData_PHONE", Phone);
+                Debug.WriteLine("Phone: " + Phone);
                 sqlComm.CommandType = CommandType.StoredProcedure;
                 sqlComm.ExecuteNonQuery();
                 //SqlDataAdapter da = new SqlDataAdapter();
@@ -98,8 +112,10 @@ namespace Compliance_App.ContentPages
                     while (reader.Read())
                     {
                         FullName.Add(reader[1].ToString());
-                        Email.Add(reader[2].ToString());
-                        Phone.Add(reader[3].ToString());
+                        if(reader[2].ToString() == string.Empty) { Email.Add("TestingPurposeOnly"); }
+                        else Email.Add(reader[2].ToString());
+                        if (reader[3].ToString() == string.Empty) { Phone.Add("TestingPurposeOnly"); }
+                        else Phone.Add(reader[3].ToString());
                     }
                 }
                 con.Close();
@@ -111,6 +127,19 @@ namespace Compliance_App.ContentPages
 
             GridView1.DataSource =  getData();
             GridView1.DataBind();
+        }
+
+        protected void CrystalReportViewer1_Load(object sender, EventArgs e)
+        {
+
+            //CrystalReportViewer1.ReportSource = CrystalReportSource1;
+            //CrystalReportViewer1.DataBind();
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            //Server.Transfer("~\\ContentPages\\ReportPage.aspx");
+            Response.Redirect("ReportPage.aspx");
         }
     }
 }

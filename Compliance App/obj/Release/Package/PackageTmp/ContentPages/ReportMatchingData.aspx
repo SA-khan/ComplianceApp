@@ -1,4 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/FrontendWithoutSidebar.Master" AutoEventWireup="true" CodeBehind="ReportMatchingData.aspx.cs" Inherits="Compliance_App.ContentPages.ReportMatchingData" %>
+
+<%@ Register Assembly="CrystalDecisions.Web, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" Namespace="CrystalDecisions.Web" TagPrefix="CR" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
 .BaseName {
@@ -16,7 +18,14 @@
     <br />
     <table style="margin-left:10px;">
         <tr>
-            <td><asp:Button ID="Button1" runat="server" Text="CLEAR DATA" OnClick="Button1_Click" /></td><td><asp:Button ID="Button2" runat="server" Text="REMATCH DATA" OnClick="Button2_Click" /></td>
+            <td><asp:Button ID="Button1" runat="server" Text="CLEAR DATA" OnClick="Button1_Click" /></td>
+            <td><asp:Button ID="Button2" runat="server" Text="REMATCH DATA" OnClick="Button2_Click" /></td>
+            <td><asp:Button ID="Button3" runat="server" Text="CRYSTAL REPORT VIEW" OnClick="Button3_Click" /></td>
+        </tr>
+        <tr
+            <td>
+                
+            </td>
         </tr>
     </table>
     

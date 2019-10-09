@@ -1,10 +1,17 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/FrontendWithoutSidebar.Master" AutoEventWireup="true" CodeBehind="ReportEUConsolidatedFinancialSanctions.aspx.cs" Inherits="Compliance_App.ContentPages.ReportEUConsolidatedFinancialSanctions" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+        <style>
+.BaseName {
+    opacity:0.8;
+    padding:5px;
+    margin-left:10px;
+}
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
             <asp:UpdatePanel ID="UpdatePanel1" runat="server"><ContentTemplate>
     <br />
-    <asp:Label ID="Label1" runat="server" Text="EU Consolidated Financial Sanctions Report" CssClass="BaseName"></asp:Label>
+    <asp:Label ID="Label1" runat="server" Text="EU Consolidated Financial Sanctions Report" BackColor="DarkRed" ForeColor="White" CssClass="BaseName"></asp:Label>
     <br />
     <br />
     <table style="margin-left:10px;">
@@ -17,5 +24,5 @@
     <asp:Panel ID="Panel1" runat="server" ScrollBars="Both" Height="500">
     <asp:GridView ID="GridView1" style="margin-left:10px;" runat="server" HeaderStyle-BackColor="Black" HeaderStyle-ForeColor="White" AlternatingRowStyle-BackColor="LightGray"></asp:GridView>
         </asp:Panel>
-        </ContentTemplate></asp:UpdatePanel>
+        </ContentTemplate> <Triggers><asp:PostBackTrigger ControlID="Button1" /></Triggers></asp:UpdatePanel>
 </asp:Content>

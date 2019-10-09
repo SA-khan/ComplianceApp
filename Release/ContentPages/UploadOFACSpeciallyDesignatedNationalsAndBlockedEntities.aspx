@@ -46,14 +46,16 @@ heading {
     text-align:center;
     height:50px;
 }
-BanseName {
-    padding-left:5px;
+.BaseName {
+    opacity:0.8;
+    padding:5px;
+    margin-left:10px;
 }
 </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <br />
-        <asp:Label ID="Label1" runat="server" Text="Upload OFAC Specially Designated Nationals And Blocked Entities Data" CssClass="BaseName"></asp:Label>
+        <asp:Label ID="Label1" runat="server" Text="Upload OFAC Specially Designated Nationals And Blocked Entities Data" BackColor="DarkRed" ForeColor="White" CssClass="BaseName"></asp:Label>
         <br />
         <br />
         <br />

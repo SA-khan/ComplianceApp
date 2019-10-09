@@ -46,14 +46,16 @@ heading {
     text-align:center;
     height:50px;
 }
-BanseName {
-    padding-left:5px;
+.BaseName {
+    opacity:0.8;
+    padding:5px;
+    margin-left:10px;
 }
 </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <br />
-        <asp:Label ID="Label1" runat="server" Text="Upload Invertors Data" CssClass="BaseName"></asp:Label>
+        <asp:Label ID="Label1" runat="server" Text="Upload FIA Most Wanted Human Smugglers And Traffickers Data" BackColor="DarkRed" ForeColor="White" CssClass="BaseName"></asp:Label>
         <br />
         <br />
         <br />
@@ -73,7 +75,7 @@ BanseName {
                     </tr>
                     <tr>
                       <th id="heading" colspan="3" style="text-align:center;">
-                        <span style="font-size:large;font-family:Arial;text-align:center;margin:auto;">INVESTOR DATA UPLOAD PANEL</span>
+                        <span style="font-size:large;font-family:Arial;text-align:center;margin:auto;">FIA Most Wanted Human Smugglers And Traffickers DATA UPLOAD PANEL</span>
                       </th>
                     </tr>
                 </thead>

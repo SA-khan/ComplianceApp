@@ -118,7 +118,7 @@ heading {
                     </tr>
                     <tr id="trStatus" runat="server">
                         <td colspan="3" style="text-align:center">
-                            <span style="font-size:17px;font-family:Arial;color:darkred;"><asp:Label ID="lblStatus" runat="server" Text=""></span>
+                            <span style="font-size:17px;font-family:Arial;color:darkred;"><asp:Label ID="lblStatus" runat="server" Text=""></asp:Label></span>
                         </td>
                     </tr>
                 </tbody>

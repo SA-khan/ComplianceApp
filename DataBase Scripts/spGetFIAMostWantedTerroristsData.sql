@@ -1,18 +1,12 @@
-USE [DemoDatabase]
-GO
-
-/****** Object:  StoredProcedure [dbo].[GetFIAMostWantedTerroristsData]    Script Date: 10/3/2019 5:52:46 PM ******/
+/****** Object:  StoredProcedure [dbo].[GetFIAMostWantedTerroristsData]    Script Date: 10/5/2019 10:56:48 PM ******/
 SET ANSI_NULLS ON
 GO
-
 SET QUOTED_IDENTIFIER ON
 GO
-
-CREATE PROC [dbo].[GetFIAMostWantedTerroristsData]
+ALTER PROC [dbo].[GetFIAMostWantedTerroristsData]
 As
 BEGIN
     select * from FIAMostWantedTerrorists
 END
+
 GO
-
-

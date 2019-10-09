@@ -1,10 +1,17 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/FrontendWithoutSidebar.Master" AutoEventWireup="true" CodeBehind="ReportUNSecurityCouncilConsolidated.aspx.cs" Inherits="Compliance_App.ContentPages.ReportUNSecurityCouncilConsolidated" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style>
+.BaseName {
+    opacity:0.8;
+    padding:5px;
+    margin-left:10px;
+}
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server"><ContentTemplate>
     <br />
-        <asp:Label ID="Label1" runat="server" Text="UN Security Council Consolidated Report" CssClass="BaseName"></asp:Label>
+        <asp:Label ID="Label1" runat="server" Text="UN Security Council Consolidated Report" BackColor="DarkRed" ForeColor="White" CssClass="BaseName"></asp:Label>
     <br />
     <br />
     <table style="margin-left:10px;">

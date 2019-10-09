@@ -1,6 +1,3 @@
-USE [DemoDatabase]
-GO
-
 /****** Object:  StoredProcedure [dbo].[GetProscribed_Organisation_NACTAData]    Script Date: 10/3/2019 5:55:04 PM ******/
 SET ANSI_NULLS ON
 GO
